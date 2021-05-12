@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="slidingNavbar">
+      <div id="closeBtn">
+        <span class="b">b</span>
+        <span class="a">a</span>
+        <span class="c">c</span>
+        <span class="k">k</span>
+      </div>
+
+      <div class="links">
+        <a href="#back">Home</a>
+        <a href="#about">About</a>
+        <a href="#">Featured Projects</a>
+      </div>
+    </div>
+
+    <div id="back" data-scroll-container>
+      <nav>
+        <h1 class="logo">kati forner</h1>
+        <div id="menu">
+          <div class="mtxt" id="menu-open">
+            <span class="m">m</span>
+            <span class="e">e</span>
+            <span class="n">n</span>
+            <span class="u">u</span>
+          </div>
+        </div>
+      </nav>
+      <div class="main" data-scroll-container>
+        <h1>We are a full-service creative studio</h1>
+        <div
+          class="hero-img"
+          data-scroll
+          data-scroll-class="appear"
+          data-scroll-repeat="true"
+        ></div>
+        <h1
+          class="btm-txt"
+          data-scroll
+          data-scroll-speed="2"
+          data-scroll-delay="1"
+          data-scroll-delay="5"
+        >
+          based in Los <br />
+          Angeles, California.
+        </h1>
+        <svg
+          class="scroll"
+          width="58"
+          height="77"
+          viewBox="0 0 58 77"
+          xmlns="http://www.w3.org/2000/svg"
+          data-delay=".45"
+          data-dur="1.5"
+          data-fromy="-100"
+          data-preset="opacity,y"
+          class="arrow mt-3 my-md-4 should-animate"
+          data-v-07576142=""
+          data-v-6553ed66=""
+          style="opacity: 1"
+        >
+          <path
+            d="M27.5 62.305V.5h3v61.805C34.82 53.72 43.779 48.747 57.21 47.5l.29 3.022C39.382 52.203 30.582 60.747 30.582 76.5H27.418c0-15.753-8.8-24.297-26.918-25.978L.79 47.5c13.431 1.247 22.39 6.219 26.71 14.805z"
+            fill="#000"
+            fill-rule="nonzero"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="about" id="about" data-scroll-container>
+        <div class="l1">
+          <img class="pimg" src="images/p1.webp" alt="" />
+          <h2 class="ptxt">
+            We <span class="stxt"><i>Transform</i></span>
+          </h2>
+        </div>
+
+        <div class="l1">
+          <h2 class="ptxt">brands,</h2>
+          <img class="pimg" src="images/p7.webp" alt="" id="p7" />
+          <h2 class="ptxt">grow</h2>
+        </div>
+
+        <div class="l1">
+          <h2 class="ptxt">businesses</h2>
+          <img src="images/p3.webp" alt="" class="pimg" />
+          <small>&</small>
+        </div>
+
+        <div class="l1">
+          <h2 class="ptxt">
+            <span class="stxt"><i>tell</i></span>
+          </h2>
+          <img class="pimg" src="images/p4.webp" alt="" />
+          <h2 class="ptxt">stories</h2>
+        </div>
+
+        <div class="l1">
+          <h2 class="ptxt">that deepen</h2>
+          <img class="pimg" src="images/p5.webp" alt="" />
+        </div>
+
+        <div class="l1">
+          <img class="pimg" src="images/p6.webp" alt="" />
+          <h2 class="ptxt">engagement</h2>
+        </div>
+
+        <div class="l1">
+          <h2 class="ptxt">
+            through <span class="stxt"><i>thoughtful</i></span>
+          </h2>
+        </div>
+
+        <div class="l1">
+          <h2 class="ptxt">design.</h2>
+          <img src="images/p3.webp" alt="" class="pimg" />
+        </div>
+      </div>
+
+      <section class="feature">
+        <div class="top">
+          <h1>Featured projects</h1>
+          <p>Scroll down for more</p>
+        </div>
+
+        <div id="projects">
+          <div class="project one">
+            <div class="left">
+              <div class="cnt">
+                <h1>Galdier</h1>
+                <div class="smtxt">
+                  <p>branding</p>
+                  <p>packaging</p>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="prjone"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="projects">
+          <div class="project tw">
+            <div class="right">
+              <div class="prjone"></div>
+            </div>
+
+            <div class="left">
+              <div class="cnt" id="scnd">
+                <h1>Wildling</h1>
+                <div class="smtxt">
+                  <p>branding</p>
+                  <p>packaging</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"
+      integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="./hover.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
