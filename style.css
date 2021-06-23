@@ -1,42 +1,11 @@
 @font-face {
-  src: url(./fonts/Gilroy-Black.ttf);
-  font-family: "GilroyBlack";
+  font-family: "Product Sans";
+  src: url(fonts/ProductSansRegular.ttf);
 }
+
 @font-face {
-  src: url(./fonts/Gilroy-Bold.ttf);
-  font-family: "GilroyBold";
-}
-@font-face {
-  src: url(./fonts/Gilroy-Extrabold.ttf);
-  font-family: "GilroyExtrabold";
-}
-@font-face {
-  src: url(./fonts/Gilroy-Heavy.ttf);
-  font-family: "GilroyHeavy";
-}
-@font-face {
-  src: url(./fonts/Gilroy-Light.ttf);
-  font-family: "GilroyLight";
-}
-@font-face {
-  src: url(./fonts/Gilroy-Medium.ttf);
-  font-family: "GilroyMedium";
-}
-@font-face {
-  src: url(./fonts/Gilroy-Regular.ttf);
-  font-family: "GilroyRegular";
-}
-@font-face {
-  src: url(./fonts/Gilroy-Semibold.ttf);
-  font-family: "GilroySemibold";
-}
-@font-face {
-  src: url(./fonts/Gilroy-Thin.ttf);
-  font-family: "GilroyThin";
-}
-@font-face {
-  src: url(./fonts/Shaloems.ttf);
   font-family: "Shaloems";
+  src: url(./fonts/Shaloems.ttf);
 }
 
 button,
