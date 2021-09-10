@@ -422,41 +422,37 @@ body {
 }
 
 .innergrid1 .post:nth-child(1) .pimg {
-  background-image: url("../images/p6.png");
+  background-image: url("./images/p6.png");
   background-size: 80%;
   background-position: center;
 }
 
 .innergrid1 .post:nth-child(2) .pimg {
-  /* height: 0px;  */
-  background-image: url("../images/p3.png");
-  /* background-size: 80%;  */
+  background-image: url("./images/p3.png");
   background-size: 80%;
   background-position: center;
 }
 
 .innergrid1 .post:nth-child(3) .pimg {
-  /* height: 0px;  */
-  background-image: url("../images/p5.png");
-  /* background-size: 80%;  */
+  background-image: url("./images/p5.png");
   background-size: 80%;
   background-position: center;
 }
 
 .innergrid2 .post:nth-child(1) .pimg {
-  background-image: url("../images/p7.png");
+  background-image: url("./images/p7.png");
   background-size: 80%;
   background-position: center;
 }
 
 .innergrid2 .post:nth-child(2) .pimg {
-  background-image: url("../images/p4.png");
+  background-image: url("./images/p4.png");
   background-size: 80%;
   background-position: center;
 }
 
 .innergrid2 .post:nth-child(3) .pimg {
-  background-image: url("../images/p2.png");
+  background-image: url("./images/p2.png");
   background-size: 80%;
   background-position: center;
 }
