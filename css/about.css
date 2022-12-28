@@ -1,0 +1,50 @@
+.about {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #6cb3b5;
+  padding: 6.25rem 6.25rem;
+  position: relative;
+}
+
+.about-txt p {
+  font-family: "Ordinary";
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.diff {
+  color: #e85913;
+}
+
+.about-gif {
+  position: absolute;
+  right: 6.25rem;
+  bottom: 50px;
+  z-index: -1;
+}
+
+@media (max-device-width: 390px) {
+  .about {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1.25rem;
+  }
+  .about-txt p {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .about-gif {
+    position: absolute;
+    right: 0;
+    left: 5%;
+    bottom: 100px;
+    /* transform: translate(-50%,-50%); */
+  }
+  .about-gif img {
+    width: 350px;
+  }
+}
