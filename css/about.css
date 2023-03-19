@@ -1,50 +1,124 @@
-.about {
-  width: 100%;
-  min-height: 100vh;
-  background-color: #6cb3b5;
-  padding: 6.25rem 6.25rem;
+.about{
+  width: 100vw;
+  min-height: 250vh;
+  background-color: #6CB3B5;
   position: relative;
 }
 
-.about-txt p {
-  font-family: "Ordinary";
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 60px;
-  color: #000;
-  text-transform: capitalize;
-}
-
-.diff {
-  color: #e85913;
-}
-
-.about-gif {
+.about-containier{
   position: absolute;
-  right: 6.25rem;
-  bottom: 50px;
-  z-index: -1;
+  top: 150px;
+  width: 100vw;
+  min-height: 150vh;
+  /* background-color: red; */
 }
 
-@media (max-device-width: 390px) {
-  .about {
-    width: 100%;
-    min-height: 100vh;
-    padding: 1.25rem;
-  }
-  .about-txt p {
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 40px;
-  }
-  .about-gif {
-    position: absolute;
-    right: 0;
-    left: 5%;
-    bottom: 100px;
-    /* transform: translate(-50%,-50%); */
-  }
-  .about-gif img {
-    width: 350px;
-  }
+.ava{
+  padding: 140px 300px;
 }
+
+.ava span h3{
+  font-family: "Aeonik";
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.ava span h1{
+  font-family: "Aeonik";
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.marquee-row{
+  position: absolute;
+  top: 23%;
+  text-transform: uppercase;
+  display: block;
+  font-family: "Monument Extended";
+}
+
+.marquee-row > span{
+  color: #fff;
+  font-size: 130px;
+  line-height: 85%;
+  white-space: nowrap;
+}
+
+.outline {
+  -webkit-text-stroke: 0.02em #fff;
+  color: transparent;
+}
+
+.gif{
+  left: 10%;
+  top: 0%;
+  position: absolute;
+}
+
+.gif img{
+  width: 600px;
+}
+
+.my-txt{
+  padding: 450px 0 0 290px ;
+}
+
+.my-txt span h1{
+  font-family: "Aeonik";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.my-process{
+  width: 100%;
+  line-height: 100px;
+  padding-top: 250px;
+  white-space: nowrap;
+  /* background-color: red; */
+}
+
+.process{
+  color: #fff;
+  font-family: "Aeonik";
+  font-weight: 400;
+  font-size: 20px;
+  padding: 0 80px;
+}
+
+.research{
+  font-family: "Monument Extended";
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 110px;
+}
+
+.outline {
+  -webkit-text-stroke: 0.02em #fff;
+  color: transparent;
+}
+
+.visual{
+  font-family: "Monument Extended";
+  text-transform: uppercase;
+  font-size: 110px;
+  color: #fff;
+}
+
+.dev{
+  font-family: "Monument Extended";
+  text-transform: uppercase;
+  font-size: 110px;
+}
+
+.goal{
+  font-family: "Monument Extended";
+  text-transform: uppercase;
+  font-size: 110px;
+}
+
+

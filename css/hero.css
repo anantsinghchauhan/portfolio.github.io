@@ -1,140 +1,144 @@
 .hero {
   width: 100vw;
-  min-height: 100vh;
-  background-color: #e85913;
+  min-height: 130vh;
+  background-color: #000;
   position: relative;
-  padding: 2.5rem 6.25rem;
 }
 
-.hero-txt {
-  width: 100%;
-  /* background-color: red; */
+.hero-center {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
 }
 
 .h-t {
-  font-size: 6.25rem;
-  font-family: "Ordinary";
+  font-size: 1rem;
+  font-family: "Aeonik";
+  letter-spacing: 1px;
+  line-height: 1.3rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.hero-sub {
+  color: #fff;
+  font-family: "Aeonik";
   text-transform: capitalize;
-  line-height: 7.625rem;
-  color: #000;
+  font-weight: 400;
+  margin-top: 30px;
+  font-size: 14px;
 }
 
 .smiley {
   position: absolute;
+  z-index: 4;
   top: 10%;
   right: 15.75rem;
   animation: smiley 5s linear infinite;
 }
 
-.hero-sub {
-  position: absolute;
-  top: 47%;
-  left: 33%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.lines {
-  display: flex;
-  margin-right: 1.25rem;
-}
-
-.line-1 {
-  width: 2px;
-  height: 15.625rem;
-  background-color: #000;
-}
-
-.line-2 {
-  width: 2px;
-  height: 250px;
-  background-color: #000;
-  margin-left: 10px;
-}
-
-.line-3 {
-  width: 2px;
-  height: 15.625rem;
-  background-color: #000;
-  margin-left: 10px;
-}
-
-.line-4 {
-  width: 8px;
-  height: 15.625rem;
-  margin-left: 10px;
-  background-color: #000;
-}
-
-.h-elems {
-  display: flex;
-  width: 100%;
-  height: 15.625rem;
-}
-
-.three-d {
-  position: relative;
-  width: 31.25rem;
-  height: 15.625rem;
-  overflow: hidden;
-}
-
-.h-video video {
-  width: 31.25rem;
-  height: 15.625rem;
-  object-fit: cover;
+.rect {
+  width: 550px;
+  height: 700px;
+  background-image: url('https://abhishekjha.me/2020/photos/load.gif');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
-.skills {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 18.75rem;
-  height: 15.625rem;
-  background-color: #738e5c;
-  margin-left: 1.25rem;
-  border-bottom-right-radius: 3.125rem;
+.no-out {
+  top: 60%;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
-.skills ul li {
-  list-style: none;
+.no-out span {
+  overflow: hidden;
+  white-space: nowrap;
+  gap: 1rem;
+}
+
+.no-out span h1 {
+  font-size: 110px;
   color: #fff;
-  font-size: 1.375rem;
-  font-family: "Timonium";
-  margin-top: 0.75rem;
+  font-family: "Monument Extended";
+  font-stretch: expanded;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 900;
 }
 
-.marquee-wrapper {
-  width: 100%;
-  height: 9.375rem;
-  background-color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.out {
+  top: 60%;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+}
+
+.out span {
   overflow: hidden;
   white-space: nowrap;
 }
 
-.marquee-inner {
-  width: 100%;
-  height: 9.375rem;
-  background-color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
+.out span h1 {
+  font-size: 110px;
+  font-family: "Monument Extended";
+  font-weight: 900;
+  font-stretch: expanded;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
-.mrq-txt {
-  font-size: 28px;
-  font-family: "Nestor";
-  color: #fff;
-  margin: 0 2.5rem;
+.outline {
+  -webkit-text-stroke: 0.02em #fff;
+  color: transparent;
+}
+
+@media only screen and (max-width: 595px) {
+  .hero {
+    width: 100vw;
+    min-height: 130vh;
+    background-color: #000;
+    position: relative;
+  }
+  
+  .hero-center {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 0 80px;
+  }
+
+  .h-t {
+    font-size: 1rem;
+    font-family: "Aeonik";
+    letter-spacing: 1px;
+    line-height: 1.3rem;
+    color: #ffffff;
+    font-weight: 500;
+    margin-left: 100px;
+  }
+
+  .smiley {
+    position: absolute;
+    z-index: 4;
+    top: 10%;
+    right: 15.75rem;
+    animation: smiley 5s linear infinite;
+    display: none;
+  }
 }
 
 @keyframes smiley {
@@ -152,170 +156,5 @@
   }
   100% {
     -webkit-transform: rotate(0deg);
-  }
-}
-
-@media (max-device-width: 1280px) {
-  .smiley {
-    right: 7.75rem;
-  }
-  .hero-sub {
-    left: 23%;
-  }
-}
-
-@media (max-device-width: 1024px) {
-  .h-t {
-    font-size: 4.375rem;
-    line-height: 5.313rem;
-  }
-  .smiley {
-    top: 20%;
-    right: 2.625rem;
-  }
-  .smiley img {
-    width: 95%;
-  }
-  .hero-sub {
-    top: 50%;
-    left: 10%;
-  }
-}
-
-@media (max-device-width: 744px) {
-  .hero {
-    height: 100vh;
-    /* background-color: red; */
-    padding: 1.25rem ;
-  }
-  .h-t {
-    width: 100%;
-    font-size: 4.375rem;
-    line-height: 5rem;
-  }
-  .smiley {
-    top: 20%;
-    right: 2.625rem;
-    z-index: 1;
-  }
-  .smiley img {
-    width: 80%;
-  }
-  .hero-sub {
-    top: 25%;
-    left: 3%;
-  }
-  .lines{
-    display: none;
-  }
-  .h-elems {
-    width: 100%;
-    height: 38rem;
-    /* background-color: antiquewhite; */
-    flex-direction: column;
-  }
-  .three-d {
-    position: relative;
-    width: 600px;
-    height: 18.75rem;
-    overflow: hidden;
-    margin-bottom: 15px;
-  }
-  .h-video video {
-    width: 600px;
-    height: 18.75rem;
-  }  
-  .skills {
-    width: 18.75rem;
-    height: 15.625rem;
-    margin-left: 0;
-  }  
-  .skills ul li {
-    list-style: none;
-    color: #fff;
-    font-size: 1.375rem;
-    font-family: "Timonium";
-    margin-top: 0.75rem;
-  }
-}
-
-
-@media (max-device-width: 390px) {
-  nav{
-    display: none;
-  }
-  .hero {
-    height: 85vh;
-    /* background-color: red; */
-    padding: 1.25rem ;
-  }
-  .h-t {
-    width: 100%;
-    font-size: 2.813rem;
-    line-height: 3.438rem;
-  }
-  .smiley {
-    display: none;
-    top: 20%;
-    right: 0.625rem;
-    z-index: 1;
-  }
-  .smiley img {
-    width: 50%;
-  }
-  .hero-sub {
-    top: 35%;
-    left: 3%;
-  }
-  .lines{
-    display: none;
-  }
-  .h-elems {
-    width: 100%;
-    height: auto;
-    /* background-color: antiquewhite; */
-    flex-direction: column;
-  }
-  .three-d {
-    position: relative;
-    width: 367px;
-    height: 12.5rem;
-    overflow: hidden;
-    margin-bottom: 15px;
-    background-size: 50%;
-  }
-  .h-video video {
-    object-fit: cover;
-    width: 367px;
-    height: 12.5rem;
-  }  
-  .skills {
-    width: 300px;
-    height: 12.5rem;
-    margin-left: 0;
-  }  
-  .skills ul li {
-    list-style: none;
-    color: #fff;
-    font-size: 1.125rem;
-    font-family: "Timonium";
-    margin-top: 0.75rem;
-  }
-  .marquee-wrapper {
-    width: 100%;
-    height: 6.25rem;
-  }
-  .marquee-inner {
-    width: 100%;
-    height: 6.25rem;
-  }
-  .mrq-txt {
-    font-size: 20px;
-    font-family: "Nestor";
-    color: #fff;
-    margin: 0 1rem;
-  }
-  .mrq-img img{
-    width: 35px;
   }
 }
