@@ -1,11 +1,11 @@
 .projects {
   width: 100vw;
-  min-height: 150vh;
-  padding: 9.375rem 5.25rem;
+  min-height: 160vh;
+  padding: 5.25rem;
   /* background-color: #161616; */
 }
 
-.p-title h1{
+.p-title h1 {
   font-family: "Monument Extended";
   font-size: 80px;
   margin-bottom: 50px;
@@ -14,14 +14,14 @@
 
 .project-container {
   width: 100%;
-  height: 150vh;
+  height: 160vh;
 }
 
 .row-one {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 75vh;
+  height: 65vh;
 }
 
 .p-one {
@@ -45,11 +45,11 @@
   width: 31.25rem;
 }
 
-.p-one-txt{
+.p-one-txt {
   margin-top: 10px;
 }
 
-.p-one-txt h1{
+.p-one-txt h1 {
   color: #fff;
   font-size: 32px;
   font-family: "Aeonik";
@@ -77,11 +77,11 @@
   width: 34.375rem;
 }
 
-.p-two-txt{
+.p-two-txt {
   margin-top: 10px;
 }
 
-.p-two-txt h1{
+.p-two-txt h1 {
   color: #fff;
   font-size: 32px;
   font-family: "Aeonik";
@@ -92,8 +92,8 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 75vh;
-  padding-top: 150px;
+  height: 65vh;
+  margin-top: 150px;
 }
 
 .p-three {
@@ -110,18 +110,18 @@
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  background-color: #F4EFE9;
+  background-color: #f4efe9;
 }
 
 .p-three-img img {
   width: 34.375rem;
 }
 
-.p-three-txt{
+.p-three-txt {
   margin-top: 10px;
 }
 
-.p-three-txt h1{
+.p-three-txt h1 {
   color: #fff;
   font-size: 32px;
   font-family: "Aeonik";
@@ -149,11 +149,11 @@
   width: 34.375rem;
 }
 
-.p-four-txt{
+.p-four-txt {
   margin-top: 10px;
 }
 
-.p-four-txt h1{
+.p-four-txt h1 {
   color: #fff;
   font-size: 32px;
   font-family: "Aeonik";
@@ -163,11 +163,11 @@
 @media only screen and (max-width: 595px) {
   .projects {
     width: 100vw;
-    min-height: 150vh;
+    min-height: 160vh;
     padding: 1rem;
   }
 
-  .p-title h1{
+  .p-title h1 {
     font-family: "Monument Extended";
     font-size: 40px;
     margin-bottom: 50px;
@@ -182,51 +182,65 @@
 
   .p-one {
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-color: #e5e0fb;
     margin-bottom: 10px;
   }
-  
+
+  .p-one-img {
+    width: 100%;
+    height: 100%;
+    display: flex;;
+  }  
+
   .p-one-img img {
     width: 15.625rem;
   }
 
   .p-two {
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-color: #cedcf4;
+    margin-top: 80px;
   }
 
   .p-two-img img {
-    width: 15.625rem;
+    width: 18.625rem;
   }
 
   .row-two {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding-top: 10px;
+    margin-top: 220px;
   }
 
   .p-three {
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-color: #cedcf4;
     margin-bottom: 10px;
-  }
+  } 
 
   .p-three-img img {
-    width: 15.625rem;
+    width: 400px;
   }
 
   .p-four {
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-color: #cedcf4;
+    margin-top: 80px;
   }
 
   .p-four-img img {
-    width: 15.625rem;
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .projects{
+    display: none;
   }
 }
 

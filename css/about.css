@@ -121,4 +121,8 @@
   font-size: 110px;
 }
 
-
+@media only screen and (max-width: 1000px) {
+  .about{
+    display: none;
+  }
+}

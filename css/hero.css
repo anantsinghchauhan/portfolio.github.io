@@ -42,7 +42,7 @@
 .rect {
   width: 550px;
   height: 700px;
-  background-image: url('https://abhishekjha.me/2020/photos/load.gif');
+  background-image: url("https://abhishekjha.me/2020/photos/load.gif");
   background-size: cover;
   background-position: center;
 }
@@ -110,7 +110,7 @@
     background-color: #000;
     position: relative;
   }
-  
+
   .hero-center {
     position: absolute;
     top: 100px;
@@ -128,18 +128,21 @@
     line-height: 1.3rem;
     color: #ffffff;
     font-weight: 500;
-    margin-left: 100px;
+    margin-left: 10px;
   }
 
   .smiley {
-    position: absolute;
-    z-index: 4;
     top: 10%;
-    right: 15.75rem;
-    animation: smiley 5s linear infinite;
+    right: 50px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero{
     display: none;
   }
 }
+
 
 @keyframes smiley {
   0% {

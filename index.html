@@ -13,6 +13,11 @@
     <title>Anant Singh</title>
   </head>
   <body>
+    <div class="not-responsive">
+      <h1>Please open this website in Desktop.</h1>
+      <p>This website is not responsive yet.</p>
+    </div>
+
     <div data-scroll-container class="scroll-container" id="luxy">
       <nav>
         <div class="logo">
@@ -78,7 +83,7 @@
           </span>
 
           <span
-            class=" fill reveal"
+            class="fill reveal"
             data-scroll
             data-scroll-speed="-5"
             data-scroll-direction="horizontal"
@@ -131,9 +136,11 @@
               </div>
             </div>
             <div class="project p-two">
-              <div class="p-two-img">
-                <img src="./assets/p2.svg" alt="" />
-              </div>
+              <a
+                href="https://www.behance.net/gallery/166399491/Intel-Website-Redesign?share=1"
+                ><div class="p-two-img">
+                  <img src="./assets/p2.svg" alt="" /></div
+              ></a>
 
               <div class="p-two-txt">
                 <span class="reveal">
@@ -145,9 +152,10 @@
 
           <div class="row-two">
             <div class="project p-three">
-              <div class="p-three-img">
-                <img src="./assets/p4.svg" alt="" />
-              </div>
+              <a href="https://oyelabs.com/"
+                ><div class="p-three-img">
+                  <img src="./assets/p5.svg" alt="" /></div
+              ></a>
 
               <div class="p-three-txt">
                 <span class="reveal">
@@ -157,9 +165,11 @@
             </div>
 
             <div class="project p-four">
-              <div class="p-four-img">
-                <img src="./assets/p1.svg" alt="" />
-              </div>
+              <a
+                href="https://www.behance.net/gallery/156832549/Lucy-UXUI-Concept-Design"
+                ><div class="p-four-img">
+                  <img src="./assets/p1.svg" alt="" /></div
+              ></a>
 
               <div class="p-four-txt">
                 <span class="reveal">
@@ -176,12 +186,27 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
     <script src="./js/index.js"></script>
     <!-- <script src="./js/emergence.js"></script>
     <script src="./js/luxy.js"></script> -->
 
     <script>
-      luxy.init();
+      // let nr = document.querySelector(".not-responsive");
+
+      // $(document).ready(() => {
+      //   if ($(window).width() > 960) {
+      //     document.querySelector(".scroll-container").style.visibility =
+      //       "hidden";
+      //     nr.style.visibility = "visible";
+
+      //   } else {
+      //     document.querySelector(".scroll-container").style.visibility =
+      //       "visible";
+      //     nr.style.visibility = "hidden";
+      //   }
+      // });
     </script>
   </body>
 </html>
