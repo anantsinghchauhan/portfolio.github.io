@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "Tiposka";
+  src: url("../fonts/Tiposka-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Review Heavy";
+  src: url("../fonts/ReviewCondensed-Heavy-Trial-BF63f6d0f4abb6d.otf");
+}
+
+@font-face {
+  font-family: "Review Poster";
+  src: url("../fonts/ReviewPoster-Thin-Trial-BF63f6d0dd6dd7c.otf");
+}
+
+@font-face {
+  font-family: "Review Regular";
+  src: url("../fonts/Review-Regular-Trial-BF63f6d10593542.otf");
+}
+
+@font-face {
+  font-family: "Review Thin";
+  src: url("../fonts/Review-Thin-Trial-BF63f6d1069de17.otf");
+}
+
+@font-face {
+  font-family: "Monument";
+  src: url("../fonts/MonumentExtended-Ultrabold.otf");
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  margin: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #121414;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3e4c4c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  /* font-family: "Neue Roman"; */
+}
+
+.reveal {
+  overflow: hidden;
+  display: block;
+}
+
+.main {
+  background-color: #fff;
+}
+
+.page1 {
+  width: 100%;
+  min-height: 100vh;
+  /* background: #000; */
+  background-image: url('../assets/hero-bg3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  width: 100%;
+  padding: 0vw 5vw;
+  background: transparent;
+  position: fixed;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links a {
+  text-decoration: none;
+  font-family: "Review Thin";
+  font-size: 1.125rem;
+  color: #fff;
+  font-weight: 900;
+}
+
+.nav-links > h1 {
+  margin-bottom: -0.625rem;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  /* background: #000; */
+  padding-top: 9.375rem;
+}
+
+.h-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #A46BFF; */
+}
+
+.hero .hero-txt {
+  font-family: "Tiposka";
+  text-transform: uppercase;
+  font-size: 5.5rem;
+  font-weight: 800;
+  line-height: 9.375rem;
+  /* background: linear-gradient(90deg, #fff -1.37%, #a46bff 107.52%); */
+  background: linear-gradient(90deg, #645E6A 0.37%, #FFF 107.52%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+  line-height: 5.625rem;
+  text-align: center;
+  /* background-image: url('https://i.giphy.com/media/HkEDr0jVekaZO/giphy.webp'); */
+}
+
+.hero .sub-txt {
+  color: #c8e3ff;
+  font-family: "Review Regular";
+  font-size: 1.75rem;
+  margin-top: 1.875rem;
+}
+
+.hero-video video {
+  display: flex;
+  align-items: center;
+  margin: 3.125rem auto;
+  width: 40%;
+  height: 15.6252rem;
+  border-radius: 300px;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 1462px) {
+  .hero-video {
+    margin: 3.125rem auto;
+    width: 40%;
+    height: 15.6252rem;
+    border-radius: 200px;
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .page1 {
+    min-height: 80vh;
+  }
+
+  .hero {
+    min-height: 80vh;
+  }
+
+  .hero .hero-txt {
+    font-size: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 1078px) {
+  .hero .hero-txt {
+    font-size: 6.875rem;
+  }
+}
+
+@media screen and (max-width: 1011px) {
+  .hero .hero-txt {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 941px) {
+  .hero .hero-txt {
+    font-size: 90px;
+  }
+}
