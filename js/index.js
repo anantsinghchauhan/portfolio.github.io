@@ -1,15 +1,3 @@
-function shery() {
-  Shery.mouseFollower({
-    duration: 1,
-  });
-
-  Shery.makeMagnet(".magnet", {
-    ease: "(t) => 1 - (1 - t) * (1 - t)",
-    duration: 1,
-  });
-}
-shery();
-
 const scroller = new LocomotiveScroll({
   el: document.querySelector(".scroll-container"),
   smooth: true,
@@ -43,12 +31,18 @@ ScrollTrigger.scrollerProxy(".scroll-container", {
 function heroAnim() {
   let tl = gsap.timeline();
 
-  tl.from(".h-txt", 1, {
-    stagger: 1,
-    ease: "Expo.ease",
-    duration: 1,
-    y: 300,
-  })
+  tl
+    .from(
+      ".h-txt",
+      1,
+      {
+        stagger: 1,
+        ease: "Expo.ease",
+        duration: 1,
+        y: 300,
+      },
+      "-=0.5"
+    )
     .from(
       ".sub-txt",
       1,
@@ -546,9 +540,3 @@ row3();
 
 ScrollTrigger.addEventListener("refresh", () => scroller.update());
 ScrollTrigger.refresh();
-
-
-
-
-
-

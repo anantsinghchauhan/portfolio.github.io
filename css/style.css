@@ -353,9 +353,26 @@ line-height: 5rem;
   }
 }
 
-@media only screen and (max-width: 390px){
+@media only screen and (min-width: 320px) and (max-width: 390px){
   .about{
-    padding: 30px 16px 30px 16px;
+    padding: 6.25rem 1rem;
+  }
+
+  .about-tag {
+    align-items: center;
+    width: fit-content;
+    background-color: #1f1f1f;
+    padding: 0px 1.5rem 0.5rem 1.5rem;
+    margin: 0 auto;
+  }
+  
+  .about-tag p {
+    font-size: 1.5rem;
+  }
+  
+  .about-tag img {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   .about-txt {
@@ -376,20 +393,6 @@ line-height: 5rem;
 @media only screen and (max-width: 768px) {
   .about {
     padding: 50px 20px;
-  }
-
-  .about-tag {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-tag p {
-    margin: 0;
-    margin-bottom: 0.75rem;
-  }
-
-  .about-tag img {
-    margin-top: 0;
   }
 
   .about-txt,
@@ -424,16 +427,20 @@ line-height: 5rem;
   overflow: hidden;
 }
 
+.skill-container{
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
 .row1 {
   width: 100%;
   display: flex;
-  flex: auto;
+  flex-shrink: 0;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 15px;
   flex-wrap: nowrap;
-  overflow: hidden;
-  /* background-color: #1f1f1f; */
   margin-top: 6.25rem;
   white-space: nowrap;
 }
@@ -441,35 +448,30 @@ line-height: 5rem;
 .row2 {
   width: 100%;
   display: flex;
-  flex: auto;
+  flex-shrink: 0;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 15px;
   flex-wrap: nowrap;
-  overflow: hidden;
-  /* background-color: #1f1f1f; */
   margin-top: 1.25rem;
   white-space: nowrap;
 }
 
 .row3 {
-  width: 100%;
+  width: fit-content;
   display: flex;
-  flex: auto;
+  flex-shrink: 0;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 15px;
   flex-wrap: nowrap;
-  overflow: hidden;
-  /* background-color: #1f1f1f; */
   margin-top: 1.25rem;
   margin-bottom: 6.25rem;
   white-space: nowrap;
 }
 
 .skill {
-  flex: 1 0 calc(33.333% - 15px);
-  display: inline-flex;
+  /* flex: 1 0 calc(33.333% - 15px); */
+  display: flex;
+  flex-shrink: 0;
   padding: 1.25rem 2rem;
   justify-content: center;
   align-items: center;
@@ -477,36 +479,43 @@ line-height: 5rem;
   background: #fff;
   font-size: 3.5rem;
   font-weight: 600;
-  margin-right: 15px;
+  margin-right: 1.188rem;
 }
 
 .light {
   color: #4343ED;
 }
 
-@media only screen and (max-width: 389px) {
+@media only screen and (min-width: 320px) and (max-width: 390px){
   .skills{
-    padding: 30px 16px 30px 16px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .skills{
-    padding: 30px 16px 30px 16px;
+    min-height: 30vh;
+    padding: 6.25rem 1rem;
   }
 
-  .row {
-    flex-direction: column;
-    align-items: center;
+  .row1 {
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 6.25rem;
+    white-space: nowrap;
   }
 
   .skill {
-    flex: 1 0 100%;
-    margin-right: 0;
+    display: flex;
+    flex-shrink: 0;
+    padding: 1.25rem 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6.25rem;
+    background: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-right: 1.188rem;
   }
-
 }
-
 
 
 
@@ -528,7 +537,7 @@ line-height: 5rem;
 .projects {
   width: 100%;
   min-height: 50vh;
-  padding: 100px 0 100px 50px;
+  padding: 6.25rem 3.125rem;
 }
 
 .project-tag {
@@ -539,7 +548,7 @@ line-height: 5rem;
   background-color: #1f1f1f;
   border-radius: 0.625rem;
   border: 1px solid #353535;
-  padding: 0px 32px 8px 32px;
+  padding: 0px 2rem 0.5rem 2rem;
 }
 
 .project-tag p {
@@ -558,8 +567,8 @@ line-height: 5rem;
 
 .project-container {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 5%;
   width: 100%;
   height: inherit;
   margin-top: 3.125rem;
@@ -608,6 +617,9 @@ line-height: 5rem;
 .p2-img {
   width: 401px;
   height: 389px;
+  background: url('../assets/p2-min.jpg');
+  background-size: cover;
+  background-position: center;
   background-color: #141414;
   border-radius: 15px;
 }
@@ -635,6 +647,10 @@ line-height: 5rem;
   height: 389px;
   background-color: #141414;
   border-radius: 15px;
+  background: url('../assets/p3.jpeg');
+  background-size: cover;
+  background-position: center;
+  
 }
 
 .p3-txt {
@@ -723,8 +739,88 @@ line-height: 5rem;
 
 
 
+@media only screen and (min-width: 320px) and (max-width: 390px){
+  .projects {
+    width: 100%;
+    min-height: 50vh;
+    padding: 6.25rem 1rem;
+  }
+  
+  .project-tag {
+    width: fit-content;
+    background-color: #1f1f1f;
+    padding: 0px 1.5rem 0.5rem 1.5rem;
+    margin: 0 auto;
+  }
+  
+  .project-tag p {
+    font-size: 1.5rem;
+  }
+  
+  .project-tag img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 
+  .project-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    height: inherit;
+    margin-top: 3.125rem;
+  }
+  
+  .project1 {
+    position: relative;
+    width: 26.563rem;
+    height: 30.313rem;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    padding: 12px;
+    overflow: hidden;
+    border: 1px solid #353535;
+    margin-bottom: 1rem;
+  }
+  
+  .p1-img {
+    width: 100%;
+  }
 
+  .project2 {
+    position: relative;
+    width: 26.563rem;
+    height: 30.313rem;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    padding: 12px;
+    overflow: hidden;
+    border: 1px solid #353535;
+    margin-bottom: 1rem;
+  }
+  
+  .p2-img {
+    width: 100%;
+  }
+
+  .project3 {
+    position: relative;
+    width: 26.563rem;
+    height: 30.313rem;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    padding: 12px;
+    overflow: hidden;
+    border: 1px solid #353535;
+    margin-bottom: 1rem;
+  }
+  
+  .p3-img {
+    width: 100%;
+  }
+
+}
 
 
 
@@ -755,7 +851,7 @@ line-height: 5rem;
 
 .exp-tag p {
   color: #fff;
-  font-size: 32px;
+  font-size: 1.5rem;
   margin-right: 0.75rem;
   line-height: normal;
 }
@@ -781,7 +877,7 @@ line-height: 5rem;
 
 .exp-list{
   width: 90%;
-  height: 30vh;
+  height: auto;
   /* background-color: #353535; */
   margin-top: 1rem;
 }
@@ -798,7 +894,6 @@ line-height: 5rem;
   color: #fff;
   transition: all 0.3s ease;
   border: 1px solid #353535;
-
 }
 
 .exp1-company{
@@ -997,11 +1092,151 @@ line-height: 5rem;
 
 
 
+@media only screen and (max-width: 1000px) {
+  .exp1-title h1,
+  .exp1-date h1,
+  .exp2-title h1,
+  .exp2-date h1,
+  .exp3-title h1,
+  .exp3-date h1 {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .exp1-title h1,
+  .exp1-date h1,
+  .exp2-title h1,
+  .exp2-date h1,
+  .exp3-title h1,
+  .exp3-date h1 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .exp1-title h1,
+  .exp1-date h1,
+  .exp2-title h1,
+  .exp2-date h1,
+  .exp3-title h1,
+  .exp3-date h1 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .exp{
+    min-height: 110vh;
+    padding: 60px 0 60px 50px;
+  }
+
+  .exp1 {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .exp1-company{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .exp1-company h1{
+    padding-left: 0rem;
+  }
+  
+  .exp1-title{
+    padding-left: 0rem;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .exp1-date{
+    padding-left: 0rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .exp2 {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .exp2-company{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .exp2-company h1{
+    padding-left: 0rem;
+  }
+  
+  .exp2-title{
+    padding-left: 0rem;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .exp2-date{
+    padding-left: 0rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  .exp3 {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .exp3-company{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .exp3-company h1{
+    padding-left: 0rem;
+  }
+  
+  .exp3-title{
+    padding-left: 0rem;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .exp3-date{
+    padding-left: 0rem;
+    width: 100%;
+    height: 100%;
+  }
+}
 
 
+@media only screen and (max-width: 390px) {
+  .exp{
+    width: 100%;
+    min-height: 50vh;
+    padding: 6.25rem 1rem;
+  }
 
-
-
+  .exp-title {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 3.125rem;
+  }
+}
 
 
 
@@ -1026,6 +1261,7 @@ line-height: 5rem;
   -webkit-text-fill-color: transparent;
   font-size: 3.125rem;
   font-weight: 500;
+  line-height: 2.813rem;
 }
 
 .e-img-container{
@@ -1049,4 +1285,21 @@ line-height: 5rem;
 .e2, .e4{
   width: 25rem;
   height: 33rem;
+}
+
+.e5{
+  padding-right: 15px;
+}
+
+@media only screen and (max-width: 390px) {
+  .e-txt{
+    width: 95%;
+    background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
 }
