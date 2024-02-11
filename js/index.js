@@ -5,7 +5,11 @@ const scroller = new LocomotiveScroll({
   inertia: 0.5,
   getSpeed: true,
   tablet: { smooth: true },
-  smartphone: { smooth: true },
+  mobile: {
+    smooth: true,
+    inertia: 0.8,
+    getDirection: true,
+  },
 });
 
 gsap.registerPlugin(ScrollTrigger);
@@ -31,7 +35,11 @@ ScrollTrigger.scrollerProxy(".scroll-container", {
 function heroAnim() {
   let tl = gsap.timeline();
 
-  tl
+  tl.from(".hero-img img", 1, {
+    ease: "circ.out",
+    scale: 0,
+    opacity:0,
+  })
     .from(
       ".h-txt",
       1,
