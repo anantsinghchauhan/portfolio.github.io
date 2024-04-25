@@ -32,6 +32,10 @@ body {
   font-family: "Regular";
 }
 
+a{
+  text-decoration: none;
+}
+
 .reveal {
   overflow: hidden;
   display: block;
@@ -51,7 +55,7 @@ nav {
 }
 
 .logo .name {
-  color: #4343ed;
+  color: #2D67BF;
   font-size: 1.625rem;
   line-height: normal;
   margin-right: 0.5rem;
@@ -88,7 +92,7 @@ nav {
 }
 
 .resume:hover {
-  background-color: #5858ed;
+  background-color: #2D67BF;
 }
 
 .nav-left{
@@ -232,7 +236,7 @@ nav {
 }
 
 .blue-txt {
-  color: #4343ed;
+  color: #2D67BF;
 }
 
 
@@ -440,7 +444,7 @@ line-height: 5rem;
   position: relative;
   width: 100%;
   min-height: 70vh;
-  background-color: #4343ed;
+  background-color: #2D67BF;
   padding: 100px 0 100px 0;
   overflow: hidden;
 }
@@ -501,7 +505,7 @@ line-height: 5rem;
 }
 
 .light {
-  color: #4343ED;
+  color: #2D67BF;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 390px){
@@ -590,6 +594,7 @@ line-height: 5rem;
   width: 100%;
   height: inherit;
   margin-top: 3.125rem;
+  /* gap: 60px; */
 }
 
 .project1 {
@@ -635,7 +640,7 @@ line-height: 5rem;
 .p2-img {
   width: 401px;
   height: 389px;
-  background: url('../assets/p2-min.jpg');
+  background: url('../assets/oyelabs.jpg');
   background-size: cover;
   background-position: center;
   background-color: #141414;
@@ -665,7 +670,7 @@ line-height: 5rem;
   height: 389px;
   background-color: #141414;
   border-radius: 15px;
-  background: url('../assets/p3.jpeg');
+  background: url('../assets/p3-min.png');
   background-size: cover;
   background-position: center;
   
@@ -677,6 +682,7 @@ line-height: 5rem;
   font-weight: 500;
   margin-top: 0.5rem;
 }
+
 
 .hovertxt-container {
   width: 290px;
@@ -749,6 +755,7 @@ line-height: 5rem;
   font-size: 1rem;
   transition: all 0.5s ease;
   margin: 3.125rem auto;
+  cursor: pointer;
 }
 
 .view-all img {
@@ -839,6 +846,40 @@ line-height: 5rem;
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -957,7 +998,7 @@ line-height: 5rem;
 }
 
 .exp1:hover{
-  background-color: #4343ed;
+  background-color: #2D67BF;
 }
 
 .exp1:hover .exp1-title h1{
@@ -1027,7 +1068,7 @@ line-height: 5rem;
 }
 
 .exp2:hover{
-  background-color: #4343ed;
+  background-color: #2D67BF;
 }
 
 .exp2:hover .exp2-title h1{
@@ -1035,6 +1076,77 @@ line-height: 5rem;
 }
 
 .exp2:hover .exp2-date h1{
+  color: #fff;
+}
+
+
+.exp3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 5.25rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  background: #1c1c1c;
+  color: #fff;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  border: 1px solid #353535;
+
+}
+
+.exp3-company{
+  display: flex;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  /* background-color: #1b1b3d; */
+}
+
+.exp3-company h1{
+  font-weight: 500;
+  color: #fff;
+  padding-left: 2rem;
+}
+
+.exp3-title{
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  width: 30%;
+  height: 100%;
+  /* background-color: #303067; */
+}
+
+.exp3-title h1{
+  color: #858585;
+  font-weight: 500;
+}
+
+.exp3-date{
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  width: 30%;
+  height: 100%;
+  /* background-color: #25259b; */
+}
+
+.exp3-date h1{
+  color: #858585;
+  font-weight: 500;
+}
+
+.exp3:hover{
+  background-color: #2D67BF;
+}
+
+.exp3:hover .exp3-title h1{
+  color: #fff;
+}
+
+.exp3:hover .exp3-date h1{
   color: #fff;
 }
 
@@ -1292,7 +1404,6 @@ line-height: 5rem;
   overflow: hidden;
   /* background-color: #1f1f1f; */
   margin-top: 6.25rem;
-  transition: all 0.3s ease;
 }
 
 .e1, .e3, .e5{

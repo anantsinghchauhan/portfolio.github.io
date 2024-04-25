@@ -1,3 +1,5 @@
+
+
 const scroller = new LocomotiveScroll({
   el: document.querySelector(".scroll-container"),
   smooth: true,
@@ -112,7 +114,7 @@ function marquee() {
         paused: config.paused,
         defaults: { ease: "none" },
         onReverseComplete: () =>
-          tl.totalTime(tl.rawTime() + tl.duration() * 100),
+          tl.totalTime(tl.rawTime() + tl.duration() * 1),
       }),
       length = items.length,
       startX = items[0].offsetLeft,
@@ -120,7 +122,7 @@ function marquee() {
       widths = [],
       xPercents = [],
       curIndex = 0,
-      pixelsPerSecond = (config.speed || 1) * 100,
+      pixelsPerSecond = (config.speed || 1) * 50,
       snap =
         config.snap === false ? (v) => v : gsap.utils.snap(config.snap || 1), // some browsers shift by a pixel to accommodate flex layouts, so for example if width is 20% the first element's width might be 242px, and the next 243px, alternating back and forth. So we snap to 5 percentage points to make things look more natural
       totalWidth,
